@@ -9,31 +9,26 @@ A trainee Bash script to automate local user onboarding and configure department
 
 ### Department
 
-* IT Department
+* IT team
   - Shell: /bin/bash
   - Commands: /usr/bin/docker, /usr/bin/nginx, /usr/bin/systemctl
-
-* Cybersecurity (sec)
+* Cybersecurity team (sec)
   - Shell: /bin/bash
   - Commands: /usr/bin/tcpdump, /usr/bin/journalctl, /usr/sbin/nft, /usr/sbin/iptables
-
 * Team Leads (lead)
   - Shell: /bin/bash
   - Commands: ALL
-
-* Other Groups
+* Other Teams
   - Shell: /sbin/nologin
   - Commands: None (Restricted profile)
 
-### Bulk Import File Format
-To use the automated import feature, place a file named "users" in the same directory. The parsing logic skips the first line (header) and reads columns 2 through 5. 
-Usernames are automatically generated in lowercase using the "f.lastname" format (e.g., John Doe becomes j.doe).
-
+### ./users File Format
 Example "./users" data structure:
 ID,First_name,Last_name,Birthday,Group_name
-1,John,Doe,12.04,it
-2,Jane,Smith,28.09,sec
-3,Bob,Boss,01.01,lead
+1,Johm,Doe,12.04,it
+2,Gabe,Lackman,28.09,sec
+3,David,Bombal,01.01,lead
+
 
 You can see all the photos below and also in ./photos directory
 
